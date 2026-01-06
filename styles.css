@@ -197,3 +197,44 @@ body {
     border-radius: 12px;
   }
 }
+
+.error-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.error-code {
+  font-size: clamp(3rem, 8vw, 5rem);
+  margin: 0;
+}
+
+.error-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.error-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.error-link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  width: fit-content;
+}
+
+.error-link:hover,
+.error-link:focus {
+  color: var(--accent);
+}

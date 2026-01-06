@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sumit Sawant">
+  <rect width="1200" height="630" fill="#f6f6f4" />
+  <rect x="96" y="120" width="16" height="160" fill="#e10600" />
+  <rect x="120" y="120" width="984" height="2" fill="#111111" opacity="0.12" />
+  <rect x="120" y="300" width="984" height="2" fill="#111111" opacity="0.08" />
+  <text x="120" y="220" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="700">
+    Sumit Sawant
+  </text>
+  <text x="120" y="280" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="4">
+    SENIOR SOFTWARE ENGINEER
+  </text>
+  <text x="120" y="360" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="28">
+    End-to-end ownership of orchestration, automation, and production systems.
+  </text>
+  <text x="120" y="430" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="24" opacity="0.7">
+    sumitsawant.e2e.work
+  </text>
+</svg>
