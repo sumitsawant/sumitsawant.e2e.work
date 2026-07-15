@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>404 - Sumit Sawant</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#101010" />
+    <title>Page not found — Sumit Sawant</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body>
-    <main class="resume-only">
-      <div class="dew-stage">
-        <div class="dew-frame error-frame">
-          <div class="error-content">
-            <div class="brand-line">
-              <span class="accent-block" aria-hidden="true"></span>
-              <span class="brand">sumitsawant.e2e.work</span>
-            </div>
-            <h1 class="error-code">404</h1>
-            <p class="error-title">Page not found</p>
-            <p class="error-body">
-              The page you're looking for doesn't exist. Return to the main page to view the resume.
-            </p>
-            <a class="error-link" href="/">Back to home</a>
-          </div>
-        </div>
-      </div>
+  <body class="error-page">
+    <main class="error-content">
+      <p class="error-code">ERROR / 404</p>
+      <h1>This route went off the happy path.</h1>
+      <p>The page you requested does not exist. The portfolio and résumé are still running normally.</p>
+      <a class="button button-primary" href="/">
+        Return home
+        <span aria-hidden="true">←</span>
+      </a>
     </main>
   </body>
 </html>

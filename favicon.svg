@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="endtoend.work favicon">
-  <rect width="32" height="32" fill="#ffffff" />
-  <rect x="5" y="6" width="4" height="20" fill="#e10600" />
-  <rect x="11" y="14" width="16" height="4" fill="#111111" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sumit Sawant">
+  <rect width="64" height="64" rx="8" fill="#101010" />
+  <path d="M18 17h31v9H28v7h17v9H28v13H18z" fill="#fffdf8" />
+  <rect x="10" y="9" width="8" height="46" fill="#ed3d2f" />
 </svg>
