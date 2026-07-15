@@ -847,6 +847,11 @@ ul {
   background: var(--paper-deep);
 }
 
+.experience .section-kicker,
+.timeline-meta {
+  color: #5c574f;
+}
+
 .timeline {
   position: relative;
   border-top: 1px solid var(--line);
@@ -874,20 +879,17 @@ ul {
 .timeline-marker {
   position: relative;
   z-index: 2;
-  padding-top: 7px;
-  background: var(--paper-deep);
-}
-
-.timeline-marker span {
   width: 17px;
   height: 17px;
   display: block;
+  align-self: start;
+  margin-top: 7px;
   border: 1px solid var(--ink);
   border-radius: 50%;
   background: var(--paper-deep);
 }
 
-.timeline-item.current .timeline-marker span {
+.timeline-item.current .timeline-marker {
   border-color: var(--red);
   background: var(--red);
   box-shadow: 0 0 0 6px rgba(237, 61, 47, 0.12);
@@ -895,7 +897,6 @@ ul {
 
 .timeline-meta {
   padding-top: 2px;
-  color: var(--muted);
   font-family: var(--mono);
   font-size: 0.67rem;
   line-height: 1.65;
@@ -1219,6 +1220,24 @@ ul {
     text-align: left;
   }
 
+  .experience .section-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .experience .section-kicker {
+    padding-top: 0;
+  }
+
+  .experience .display-heading {
+    margin-bottom: 52px;
+  }
+
+  .experience .timeline-item {
+    grid-template-columns: 18px minmax(150px, 0.28fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+
   .contact-layout {
     grid-template-columns: 1fr minmax(320px, 0.55fr);
   }
@@ -1360,12 +1379,15 @@ ul {
     grid-column: 2;
   }
 
-  .timeline-item {
-    grid-template-columns: 18px 1fr;
+  .experience .timeline-item {
+    grid-template-columns: 18px minmax(0, 1fr);
+    column-gap: 24px;
+    row-gap: 12px;
+    padding: 36px 0 40px;
   }
 
-  .timeline-meta,
-  .timeline-content {
+  .experience .timeline-meta,
+  .experience .timeline-content {
     grid-column: 2;
   }
 
@@ -1518,8 +1540,9 @@ ul {
     margin-bottom: 2px;
   }
 
-  .timeline-item {
-    gap: 20px;
+  .experience .timeline-item {
+    column-gap: 20px;
+    padding: 30px 0 34px;
   }
 
   .role-line {
@@ -1528,7 +1551,12 @@ ul {
 
   .current-badge {
     display: inline-block;
-    margin: 0 0 20px;
+    margin: 0 0 14px;
+  }
+
+  .experience .timeline-highlights {
+    display: grid;
+    gap: 8px;
   }
 
   .toolkit-grid {
@@ -1612,7 +1640,7 @@ ul {
   .wordmark-mark,
   .button-primary,
   .status-dot,
-  .timeline-item.current .timeline-marker span {
+  .timeline-item.current .timeline-marker {
     border: 1px solid ButtonText;
   }
 
