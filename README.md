@@ -17,6 +17,7 @@ Open `http://localhost:4173`.
 - `index.html` — semantic portfolio content and metadata
 - `styles.css` — responsive visual system
 - `script.js` — mobile navigation and progressive reveal behavior
+- `pixel.html` / `pixel.css` / `pixel.js` — alternate interactive “Signal view” portfolio
 - `SumitSawant.pdf` — downloadable current résumé
 - `og.svg` / `og.png` — social preview artwork
 - `CNAME` — custom-domain configuration; do not delete
