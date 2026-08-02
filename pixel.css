@@ -68,27 +68,15 @@ button { font: inherit; }
   inset: 0;
   width: 100%;
   height: 100%;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-}
-
-.signal-visual::after {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    linear-gradient(90deg, rgba(8, 26, 17, 0.12), transparent 28%, transparent 72%, rgba(8, 26, 17, 0.2)),
-    linear-gradient(0deg, rgba(8, 26, 17, 0.48), transparent 32%);
-  content: "";
-  pointer-events: none;
+  image-rendering: auto;
 }
 
 .scanlines {
   position: absolute;
   inset: 0;
   z-index: 2;
-  opacity: 0.34;
-  background-image: repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(224, 255, 206, 0.22) 4px);
+  opacity: 0.12;
+  background-image: repeating-linear-gradient(0deg, transparent 0, transparent 5px, rgba(224, 255, 206, 0.24) 6px);
   mix-blend-mode: screen;
   pointer-events: none;
 }
@@ -140,9 +128,23 @@ button { font: inherit; }
 .visual-topline p { display: flex; align-items: center; gap: 8px; margin: 0; }
 .visual-topline i { width: 6px; height: 6px; border-radius: 50%; background: var(--acid); box-shadow: 0 0 12px var(--acid); }
 
-.visual-caption { bottom: 92px; }
+.visual-caption { bottom: 86px; }
 .visual-caption span { font-family: var(--mono); font-size: 0.61rem; letter-spacing: 0.12em; }
-.visual-caption p { max-width: 570px; margin: 12px 0 0; font-size: clamp(1.6rem, 3vw, 3rem); font-weight: 700; letter-spacing: -0.055em; line-height: 1.03; }
+.visual-caption p {
+  width: fit-content;
+  max-width: 570px;
+  margin: 10px 0 0;
+  padding: 8px 11px;
+  border: 1px solid rgba(239, 255, 230, 0.44);
+  background: rgba(7, 29, 18, 0.7);
+  font-family: var(--mono);
+  font-size: clamp(0.72rem, 1.05vw, 0.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
 
 .visual-readout {
   bottom: 28px;
@@ -292,7 +294,7 @@ button { font: inherit; }
 @media (max-width: 540px) {
   .signal-visual { height: 48svh; min-height: 380px; }
   .visual-caption { bottom: 72px; }
-  .visual-caption p { font-size: 1.45rem; }
+  .visual-caption p { font-size: 0.68rem; }
   .visual-readout span:nth-child(2) { display: none; }
   .portfolio-panel { padding-inline: 20px; }
   .panel-header { min-height: 68px; }
