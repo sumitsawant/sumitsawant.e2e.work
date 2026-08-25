@@ -1,18 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sumit Sawant">
-  <rect width="1200" height="630" fill="#f6f6f4" />
-  <rect x="96" y="120" width="16" height="160" fill="#e10600" />
-  <rect x="120" y="120" width="984" height="2" fill="#111111" opacity="0.12" />
-  <rect x="120" y="300" width="984" height="2" fill="#111111" opacity="0.08" />
-  <text x="120" y="220" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="700">
-    Sumit Sawant
-  </text>
-  <text x="120" y="280" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="4">
-    SENIOR SOFTWARE ENGINEER
-  </text>
-  <text x="120" y="360" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="28">
-    End-to-end ownership of orchestration, automation, and production systems.
-  </text>
-  <text x="120" y="430" fill="#111111" font-family="Helvetica, Arial, sans-serif" font-size="24" opacity="0.7">
-    sumitsawant.e2e.work
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sumit Sawant — Backend Engineer at LotusFlare">
+  <rect width="1200" height="630" fill="#070907" />
+  <g opacity=".16" stroke="#c8ff29" fill="none">
+    <circle cx="955" cy="305" r="210" />
+    <circle cx="955" cy="305" r="142" />
+    <path d="M741 184 850 92l103 149 154-61-27 187 90 107-190 23-105-91-142 73z" />
+  </g>
+  <g fill="#c8ff29">
+    <circle cx="741" cy="184" r="8"/><circle cx="850" cy="92" r="8"/><circle cx="953" cy="241" r="8"/>
+    <circle cx="1107" cy="180" r="8"/><circle cx="1080" cy="367" r="8"/><circle cx="980" cy="497" r="8"/>
+  </g>
+  <rect x="72" y="58" width="10" height="10" fill="#c8ff29" />
+  <text x="98" y="68" fill="#f1f3ea" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">SUMIT SAWANT / E2E</text>
+  <text x="72" y="252" fill="#f1f3ea" font-family="Arial, sans-serif" font-size="86" font-weight="700" letter-spacing="-5">BACKEND SYSTEMS</text>
+  <text x="72" y="338" fill="none" stroke="#c8ff29" stroke-width="2" font-family="Arial, sans-serif" font-size="86" font-weight="700" letter-spacing="-5">AT SCALE.</text>
+  <text x="76" y="428" fill="#c8ff29" font-family="monospace" font-size="17" letter-spacing="3">BACKEND ENGINEER · LOTUSFLARE</text>
+  <text x="76" y="475" fill="#979d90" font-family="Arial, sans-serif" font-size="22">Network APIs · Orchestration · Platform engineering</text>
+  <line x1="72" y1="544" x2="1128" y2="544" stroke="#f1f3ea" opacity=".18" />
+  <text x="76" y="584" fill="#979d90" font-family="monospace" font-size="15" letter-spacing="2">SUMITSAWANT.E2E.WORK</text>
 </svg>

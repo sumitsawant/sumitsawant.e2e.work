@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sumit Sawant — Résumé</title>
+    <style>
+      @page { size:A4; margin:0; }
+      * { box-sizing:border-box; }
+      body { margin:0; color:#151713; background:#eceee8; font-family:Arial,Helvetica,sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+      .page { width:210mm; min-height:297mm; margin:0 auto; padding:12mm 13mm 10mm; background:#fff; position:relative; overflow:hidden; }
+      .top-rule { height:4px; width:100%; background:#b2e91f; margin-bottom:7mm; }
+      header { display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:5mm; border-bottom:1px solid #cfd3ca; }
+      h1 { margin:0; font-size:29pt; line-height:.9; letter-spacing:-1.5pt; }
+      .role { margin:3mm 0 0; font:700 9pt/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; text-transform:uppercase; letter-spacing:1.2pt; color:#557000; }
+      .contact { text-align:right; font-size:7.8pt; line-height:1.65; color:#52564e; }
+      .contact a { color:inherit; text-decoration:none; }
+      .summary { display:grid; grid-template-columns:26mm 1fr; gap:7mm; padding:5mm 0; border-bottom:1px solid #cfd3ca; }
+      .label { font:700 7pt/1.3 ui-monospace,SFMono-Regular,Consolas,monospace; text-transform:uppercase; letter-spacing:1pt; color:#6d7467; }
+      .summary p { margin:0; font-size:9pt; line-height:1.52; }
+      .layout { display:grid; grid-template-columns:43mm 1fr; gap:9mm; margin-top:5mm; }
+      aside { border-right:1px solid #dfe2db; padding-right:7mm; }
+      section { margin-bottom:5mm; }
+      h2 { margin:0 0 3mm; font:700 7.2pt/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; text-transform:uppercase; letter-spacing:1.2pt; color:#557000; }
+      .skill-group { margin-bottom:3mm; }
+      .skill-group strong { display:block; margin-bottom:1mm; font-size:7.7pt; }
+      .skill-group p,.side-copy { margin:0; color:#555950; font-size:7.3pt; line-height:1.48; }
+      .education strong,.award strong { display:block; font-size:7.8pt; line-height:1.35; }
+      .education p,.award p { margin:1mm 0 0; color:#555950; font-size:7.2pt; line-height:1.45; }
+      .job { margin-bottom:4.3mm; }
+      .job-head { display:flex; justify-content:space-between; gap:5mm; align-items:baseline; margin-bottom:1.5mm; }
+      .job h3 { margin:0; font-size:10.5pt; letter-spacing:-.15pt; }
+      .job h3 span { color:#697063; font-weight:400; }
+      .dates { white-space:nowrap; font:700 6.8pt/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; color:#62685e; }
+      .job-sub { margin:-.5mm 0 1.7mm; font-size:7.3pt; color:#68705f; }
+      ul { margin:0; padding-left:3.7mm; }
+      li { margin:0 0 1.25mm; padding-left:.7mm; font-size:7.45pt; line-height:1.4; }
+      li::marker { color:#7da500; }
+      .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:2mm; margin:2.5mm 0 4.5mm; }
+      .metric { border:1px solid #d8ddd1; padding:2.2mm; }
+      .metric strong { display:block; font-size:12pt; letter-spacing:-.4pt; color:#415600; }
+      .metric span { display:block; margin-top:.5mm; font:400 5.8pt/1.25 ui-monospace,SFMono-Regular,Consolas,monospace; text-transform:uppercase; color:#6c7267; }
+      footer { position:absolute; left:13mm; right:13mm; bottom:6mm; display:flex; justify-content:space-between; border-top:1px solid #cfd3ca; padding-top:2mm; font:400 5.8pt/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; color:#777d73; text-transform:uppercase; letter-spacing:.7pt; }
+      @media screen { .page { box-shadow:0 10px 40px rgba(0,0,0,.12); } }
+    </style>
+  </head>
+  <body>
+    <article class="page">
+      <div class="top-rule"></div>
+      <header>
+        <div><h1>Sumit Sawant</h1><p class="role">Backend Engineer · LotusFlare</p></div>
+        <div class="contact">
+          <div>Pune, Maharashtra, India · +91 77982 19130</div>
+          <div><a href="mailto:mr.sumitsawant@gmail.com">mr.sumitsawant@gmail.com</a> · <a href="https://www.linkedin.com/in/sumitsawant/">linkedin.com/in/sumitsawant</a></div>
+          <div><a href="https://github.com/sumitsawant">github.com/sumitsawant</a> · <a href="https://sumitsawant.e2e.work">sumitsawant.e2e.work</a></div>
+        </div>
+      </header>
+
+      <div class="summary">
+        <div class="label">Profile</div>
+        <p>Backend engineer with 8+ years of experience across network APIs, orchestration, workflow automation, SaaS integrations, and production support. Currently building scalable services for LotusFlare’s Network API Marketplace; formerly a Senior Software Engineer on Freshservice Orchestration.</p>
+      </div>
+
+      <div class="layout">
+        <aside>
+          <section>
+            <h2>Core technologies</h2>
+            <div class="skill-group"><strong>Languages</strong><p>Java · Go · JavaScript · Groovy · Ruby</p></div>
+            <div class="skill-group"><strong>Backend &amp; data</strong><p>Vert.x · Redis · RabbitMQ · PostgreSQL · MySQL · Elasticsearch</p></div>
+            <div class="skill-group"><strong>Cloud &amp; platform</strong><p>AWS · Azure · GCP · Docker · Kubernetes · ArgoCD · Nginx</p></div>
+            <div class="skill-group"><strong>Quality &amp; performance</strong><p>JUnit · Mockito · SpotBugs · JMeter · Locust · Jenkins</p></div>
+            <div class="skill-group"><strong>Domains</strong><p>Network APIs · Orchestration · Cloud discovery · Workflow automation · SaaS management</p></div>
+          </section>
+          <section class="education">
+            <h2>Education</h2>
+            <strong>B.E. Information Technology</strong>
+            <p>First Class<br />JSPM’s Rajarshi Shahu College of Engineering<br />Savitribai Phule Pune University<br />2012–2017</p>
+          </section>
+          <section class="award">
+            <h2>Recognition</h2>
+            <strong>Above &amp; Beyond — Q1 Silver Award</strong>
+            <p>Freshworks · June 2025<br />Team award for resolving a critical security issue during a high-stakes customer escalation.</p>
+          </section>
+          <section class="award">
+            <h2>Publication</h2>
+            <strong>Implementation of Two Level QR Code (2LQR)</strong>
+            <p>IJARCCE · May 2017</p>
+          </section>
+        </aside>
+
+        <main>
+          <section>
+            <h2>Experience</h2>
+            <div class="job">
+              <div class="job-head"><h3>Backend Engineer <span>· LotusFlare</span></h3><span class="dates">APR 2026 — PRESENT</span></div>
+              <p class="job-sub">Network API Marketplace · Pune · On-site</p>
+              <ul>
+                <li>Building backend systems for a marketplace that helps communications service providers expose, manage, and monetize communication and network APIs.</li>
+                <li>Developing scalable, reliable services spanning API publishing, developer onboarding, purchasing, metering, billing, and support.</li>
+              </ul>
+            </div>
+
+            <div class="metrics">
+              <div class="metric"><strong>1.25B+</strong><span>platform transactions</span></div>
+              <div class="metric"><strong>45+</strong><span>orchestration apps</span></div>
+              <div class="metric"><strong>&lt;1 sec</strong><span>from ~3 min response</span></div>
+            </div>
+
+            <div class="job">
+              <div class="job-head"><h3>Senior Software Engineer <span>· Freshworks</span></h3><span class="dates">MAR 2020 — APR 2026</span></div>
+              <p class="job-sub">Freshservice Orchestration Platform · Bengaluru / Chennai</p>
+              <ul>
+                <li>Helped build and scale Freshservice Orchestration, which processed 1.25B+ transactions across 50 integrated application orchestrations and served 6,058 accounts.</li>
+                <li>Led development, migration, maintenance, testing, and production support for 45+ orchestration apps across identity, on-premise, cloud, and SaaS.</li>
+                <li>Revamped execution beyond a 29-second limit, eliminating AWS Lambda timeouts and reducing responses from roughly three minutes to under one second.</li>
+                <li>Built services with Java, Vert.x, Redis, and RabbitMQ; improved JUnit and Mockito coverage across 9+ connectors.</li>
+                <li>Resolved 1,000+ complex L2 issues and joined 500+ customer calls across six global regions, covering AD Web Services, Kerberos, NTLM, DNS, permissions, firewalls, and connectivity.</li>
+                <li>Integrated Zoom, Slack, Dropbox Business, Azure AD, OneLogin IAM, and Smartsheet with CMDB and SaaS Management, identifying USD 50K+ in savings for internal IT.</li>
+                <li>Fixed SSRF vulnerabilities, supported OAuth migrations, hardened credentials, and mentored engineers and QA on troubleshooting and production readiness.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-head"><h3>Software Product Developer <span>· Infiverve Technologies</span></h3><span class="dates">JUN 2018 — MAR 2020</span></div>
+              <p class="job-sub">Flint unified automation platform · Pune</p>
+              <ul>
+                <li>Implemented loop-based workflow automation, asynchronous scheduling with Vert.x, and Go/Groovy automation scripts.</li>
+                <li>Built 50+ Webix analytics widgets and contributed to a PostgreSQL multi-schema to single-schema tenancy migration.</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer><span>Updated August 2026</span><span>Backend · Network APIs · Orchestration</span></footer>
+    </article>
+  </body>
+</html>

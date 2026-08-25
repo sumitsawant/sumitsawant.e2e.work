@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An interactive portfolio view for Sumit Sawant, backend engineer building reliable distributed systems."
+    />
+    <meta name="author" content="Sumit Sawant" />
+    <meta name="theme-color" content="#f3f5ef" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://sumitsawant.e2e.work/previous/pixel.html" />
+    <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Signal View — Sumit Sawant</title>
+    <link rel="stylesheet" href="pixel.css?v=profile-1" />
+  </head>
+  <body>
+    <a class="skip-link" href="#portfolio-content">Skip to portfolio</a>
+
+    <main class="signal-shell">
+      <section class="portfolio-panel" id="portfolio-content" aria-labelledby="signal-title">
+        <header class="panel-header">
+          <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Classic view</a>
+          <a href="SumitSawant.pdf?v=d530266f" class="resume-link" target="_blank" rel="noreferrer">
+            Résumé <span aria-hidden="true">↗</span>
+          </a>
+        </header>
+
+        <div class="identity">
+          <p class="overline">BACKEND ENGINEER · PUNE, INDIA</p>
+          <h1 id="signal-title">Sumit<br />Sawant<span>.</span></h1>
+          <p class="identity-copy">
+            I build production systems that stay understandable under pressure—from network API marketplaces to
+            asynchronous platforms operating at billion-transaction scale.
+          </p>
+        </div>
+
+        <nav class="panel-tabs" aria-label="Portfolio sections" role="tablist">
+          <button id="tab-overview" type="button" role="tab" aria-selected="true" aria-controls="overview" data-tab="overview">
+            <span>01</span> Overview
+          </button>
+          <button id="tab-impact" type="button" role="tab" aria-selected="false" aria-controls="impact" data-tab="impact" tabindex="-1">
+            <span>02</span> Impact
+          </button>
+          <button id="tab-stack" type="button" role="tab" aria-selected="false" aria-controls="stack" data-tab="stack" tabindex="-1">
+            <span>03</span> Stack
+          </button>
+        </nav>
+
+        <div class="tab-stage">
+          <section class="tab-panel is-active" id="overview" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+            <p class="panel-label">CURRENT SIGNAL</p>
+            <article class="current-role">
+              <div>
+                <span>APR 2026—NOW</span>
+                <h2>Network API Marketplace</h2>
+                <p>LotusFlare</p>
+              </div>
+              <span class="live-pill"><i aria-hidden="true"></i> LIVE</span>
+            </article>
+            <p class="panel-body">
+              Backend services for API publication, developer onboarding, purchasing, metering, billing, and
+              customer-support workflows for communications service providers.
+            </p>
+            <div class="metric-strip" aria-label="Career metrics">
+              <div><strong>8+</strong><span>Years building</span></div>
+              <div><strong>45+</strong><span>Integrations</span></div>
+              <div><strong>1.25B+</strong><span>Transactions</span></div>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="impact" role="tabpanel" aria-labelledby="tab-impact" tabindex="0" hidden>
+            <p class="panel-label">SELECTED OUTCOMES</p>
+            <div class="impact-cards">
+              <article>
+                <span>01 / PERFORMANCE</span>
+                <strong>~3 min → &lt;1 sec</strong>
+                <p>Re-architected long-running execution beyond a synchronous timeout wall.</p>
+              </article>
+              <article>
+                <span>02 / RELIABILITY</span>
+                <strong>1,000+ escalations</strong>
+                <p>Diagnosed production failures across auth, networks, queues, and permissions.</p>
+              </article>
+              <article>
+                <span>03 / PLATFORM</span>
+                <strong>6,058 accounts</strong>
+                <p>Owned integrations across a high-volume, multi-tenant orchestration ecosystem.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="stack" role="tabpanel" aria-labelledby="tab-stack" tabindex="0" hidden>
+            <p class="panel-label">SYSTEM COMPONENTS</p>
+            <div class="stack-groups">
+              <article><span>LANGUAGES</span><p>Java · Go · PowerShell · Groovy · JavaScript</p></article>
+              <article><span>RUNTIME + DATA</span><p>Vert.x · PostgreSQL · Redis · RabbitMQ · Elasticsearch</p></article>
+              <article><span>DELIVERY</span><p>AWS · Docker · Kubernetes · Jenkins · Argo CD</p></article>
+              <article><span>SECURITY</span><p>OAuth · Kerberos · NTLM · SSRF remediation</p></article>
+            </div>
+          </section>
+        </div>
+
+        <footer class="panel-footer">
+          <a href="mailto:mr.sumitsawant@gmail.com">mr.sumitsawant@gmail.com <span aria-hidden="true">↗</span></a>
+          <nav aria-label="Professional profiles">
+            <a href="https://www.linkedin.com/in/sumitsawant/" target="_blank" rel="noreferrer">LI</a>
+            <a href="https://github.com/sumitsawant" target="_blank" rel="noreferrer">GH</a>
+            <a href="https://stackoverflow.com/users/9969525/sumit-sawant" target="_blank" rel="noreferrer">SO</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+
+    <script src="pixel.js?v=profile-1" defer></script>
+  </body>
+</html>

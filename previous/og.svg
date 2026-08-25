@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sumit Sawant — Backend Engineer</title>
+  <desc id="desc">Backend systems, built end to end. Java, Go, and distributed systems.</desc>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#fffdf8" stroke-opacity=".055" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#101010" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <circle cx="1110" cy="-20" r="285" fill="none" stroke="#ed3d2f" stroke-opacity=".22" stroke-width="92" />
+  <rect x="72" y="66" width="48" height="48" fill="#ed3d2f" />
+  <text x="96" y="100" fill="#fffdf8" font-family="Arial, sans-serif" font-size="26" font-weight="800" text-anchor="middle">S</text>
+  <text x="142" y="97" fill="#fffdf8" font-family="monospace" font-size="19" letter-spacing="2">SUMIT/E2E</text>
+  <text x="72" y="235" fill="#fffdf8" font-family="Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-4">Backend systems,</text>
+  <text x="72" y="320" fill="#ed3d2f" font-family="Georgia, serif" font-size="82" font-style="italic" font-weight="500" letter-spacing="-3">built end to end.</text>
+  <text x="75" y="392" fill="#fffdf8" fill-opacity=".64" font-family="Arial, sans-serif" font-size="25">Java · Go · Distributed Systems · Production Ownership</text>
+  <line x1="72" y1="454" x2="1128" y2="454" stroke="#fffdf8" stroke-opacity=".18" />
+  <text x="72" y="505" fill="#ed3d2f" font-family="monospace" font-size="18">1.25B+</text>
+  <text x="72" y="537" fill="#fffdf8" fill-opacity=".56" font-family="monospace" font-size="14">PLATFORM TRANSACTIONS</text>
+  <text x="340" y="505" fill="#ed3d2f" font-family="monospace" font-size="18">45+</text>
+  <text x="340" y="537" fill="#fffdf8" fill-opacity=".56" font-family="monospace" font-size="14">PRODUCTION INTEGRATIONS</text>
+  <text x="638" y="505" fill="#ed3d2f" font-family="monospace" font-size="18">~3 MIN → &lt;1 SEC</text>
+  <text x="638" y="537" fill="#fffdf8" fill-opacity=".56" font-family="monospace" font-size="14">RESPONSE PATH</text>
+  <text x="914" y="505" fill="#ed3d2f" font-family="monospace" font-size="18">PUNE, INDIA</text>
+  <text x="914" y="537" fill="#fffdf8" fill-opacity=".56" font-family="monospace" font-size="14">BACKEND ENGINEER</text>
+  <text x="72" y="595" fill="#fffdf8" fill-opacity=".38" font-family="monospace" font-size="14">sumitsawant.e2e.work</text>
+</svg>
