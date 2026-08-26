@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <body>
+  <body id="top">
+    <a class="skip-link" href="#content">Skip to content</a>
     <div class="loader" aria-hidden="true">
       <div class="loader__mark">SS<span>/</span>E2E</div>
       <div class="loader__track"><span></span></div>
@@ -34,13 +35,13 @@
     <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <header class="site-header">
       <a class="logo magnetic" href="#top" aria-label="Sumit Sawant, home"><span class="logo__signal"></span><span>SUMIT SAWANT <i>/</i> E2E</span></a>
-      <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a><a class="nav-resume" href="SumitSawant-2026.pdf" target="_blank" rel="noreferrer">Résumé</a></nav>
       <a class="header-cta magnetic" href="SumitSawant-2026.pdf" target="_blank" rel="noreferrer">Résumé <span>↗</span></a>
     </header>
 
-    <main id="top">
+    <main id="content">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__eyebrow reveal"><span class="pulse"></span>Backend Engineer · LotusFlare · Pune <span class="hero__availability">Network API Marketplace</span></div>
+        <div class="hero__eyebrow reveal"><span class="pulse"></span><span data-decode aria-label="Backend Engineer at LotusFlare in Pune">Backend Engineer · LotusFlare · Pune</span><span class="hero__availability">Network API Marketplace</span></div>
         <div class="hero__title-wrap">
           <h1 id="hero-title" class="hero__title" aria-label="I build backend systems at scale">
             <span class="title-line" data-shift="0.04">I build backend</span>
@@ -49,14 +50,23 @@
           <p class="hero__side-note">Network APIs / Backend<br />Orchestration / Cloud</p>
         </div>
         <div class="hero__footer reveal">
-          <div><span class="micro-label">BACKEND &amp; PLATFORM ENGINEERING</span><p>I build scalable services for telecom APIs, shaped by eight years across network platforms, orchestration, and automation.</p></div>
+          <div><span class="micro-label" data-decode>BACKEND &amp; PLATFORM ENGINEERING</span><p>I build scalable services for telecom APIs, shaped by eight years across network platforms, orchestration, and automation.</p></div>
+          <aside class="scene-console" aria-label="Interactive network system visualization">
+            <div class="scene-console__head"><span>SIMULATION / 01</span><span class="scene-console__live"><i></i> RENDERING</span></div>
+            <div class="scene-console__modes" role="group" aria-label="Visualization mode">
+              <button type="button" class="is-active" data-scene-mode="topology" aria-pressed="true">Topology</button>
+              <button type="button" data-scene-mode="traffic" aria-pressed="false">Traffic</button>
+              <button type="button" data-scene-mode="signal" aria-pressed="false">Signal</button>
+            </div>
+            <div class="scene-console__readout"><span data-scene-readout aria-live="polite">42 nodes · mapped</span><span>Pointer steers field</span></div>
+          </aside>
           <a class="round-link magnetic" href="#work" aria-label="Explore selected work"><span>Explore</span><span class="round-link__arrow">↓</span></a>
         </div>
         <div class="hero__scroll" aria-hidden="true"><span></span> Scroll to inspect</div>
       </section>
 
       <section class="ticker" aria-label="Areas of expertise">
-        <div class="ticker__track">
+        <div class="ticker__track" aria-hidden="true">
           <span>Backend systems</span><i>✦</i><span>Network APIs</span><i>✦</i><span>Orchestration</span><i>✦</i><span>Workflow automation</span><i>✦</i>
           <span>Backend systems</span><i>✦</i><span>Network APIs</span><i>✦</i><span>Orchestration</span><i>✦</i><span>Workflow automation</span><i>✦</i>
         </div>
