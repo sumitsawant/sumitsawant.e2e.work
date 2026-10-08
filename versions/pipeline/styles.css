@@ -504,22 +504,3 @@ main, .masthead, .colophon { position: relative; z-index: 2; }
   .system-hud__head i, .scroll-cue span::after { animation: none; }
   .reveal { opacity: 1; transform: none; }
 }
-
-/* Interactive pipeline and portfolio archive navigation */
-.hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:24px; margin-top:32px; }
-.hero-button { padding:13px 19px; background:#ff4a2d; color:#090908; font-weight:600; border:1px solid #ff4a2d; transition:background .2s, transform .2s; }
-.hero-button:hover { background:#ff765e; transform:translateY(-2px); }
-.hero-button span { margin-left:20px; }
-.hero-link { font:400 .75rem var(--mono); color:#d0cbc2; border-bottom:1px solid #77736d; padding-bottom:5px; }
-.scene-controls { position:absolute; right:var(--pad); bottom:25px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; max-width:440px; }
-.scene-controls button { font:400 .65rem var(--mono); color:#d0cbc2; background:rgba(15,14,12,.8); border:1px solid #5c554c; padding:9px 12px; cursor:pointer; transition:border-color .2s, color .2s; }
-.scene-controls button:hover, .scene-controls button[aria-pressed="true"] { border-color:#ff4a2d; color:#ff765e; }
-.scene-controls button:disabled { opacity:.4; cursor:default; }
-.scene-controls .meta { flex-basis:100%; font-size:.56rem; text-align:right; color:#aaa49a; }
-.masthead__nav { flex-wrap:wrap; }
-@media (max-width:900px) { .lede { min-height:960px; } .system-hud { bottom:118px; } .scene-controls { bottom:28px; } }
-@media (max-width:560px) { .lede { min-height:930px; } .scene-controls { left:var(--pad); right:var(--pad); } .scene-controls .meta { text-align:left; } .hero-actions { gap:18px; } .masthead__nav { gap:14px; } }
-@media print { #world, .signal-noise, .scroll-meter, .scene-controls, .system-hud { display:none; } .lede { color:#14130f; min-height:auto; } .lede::after { display:none; } .reveal { opacity:1; transform:none; } }
-.system-hud { background:rgba(9,9,8,.88); padding:12px 16px; border:1px solid rgba(244,242,237,.24); }
-.system-hud__head { color:#b8b3aa; }
-.system-hud__metrics p { color:#aaa49a; }

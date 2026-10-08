@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="../../" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sumit Sawant — backend engineer. Telecom platforms, workflow orchestration, and the production systems behind them. 1.25B+ transactions, 3 min to under 1 second." />
@@ -27,8 +28,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="versions/pipeline/styles.css" />
+    <script type="module" src="versions/pipeline/script.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -57,7 +58,6 @@
         <a href="#work">Work</a>
         <a href="#record">Record</a>
         <a href="#contact">Contact</a>
-        <a href="versions/">Versions</a>
         <a href="SumitSawant-2026.pdf" target="_blank" rel="noreferrer">CV<span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -75,10 +75,6 @@
           <div class="lede__body">
             <p>Eight years across telecom platforms, workflow orchestration, and the production systems behind them — from implementation through the on-call pager and the customer call when it breaks.</p>
           </div>
-          <div class="hero-actions">
-            <a class="hero-button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="hero-link" href="versions/">All portfolio versions <span aria-hidden="true">↗</span></a>
-          </div>
         </div>
         <div class="system-hud" aria-hidden="true">
           <div class="system-hud__head meta">
@@ -91,11 +87,6 @@
             <p><span>Median latency</span><strong data-latency>180.0 s</strong></p>
             <p><span>Throughput</span><strong>1.25B+</strong></p>
           </div>
-        </div>
-        <div class="scene-controls" aria-label="Pipeline visualization controls">
-          <button type="button" id="scene-mode" aria-pressed="false">Optimise pipeline</button>
-          <button type="button" id="scene-pause" aria-pressed="false">Pause motion</button>
-          <span class="meta">Illustrative request trace</span>
         </div>
         <p class="scroll-cue meta" aria-hidden="true"><span></span> Scroll to optimise</p>
       </section>
@@ -132,7 +123,7 @@
           </div>
 
           <figcaption class="meta chart__cap">
-            Reported result: about 3 minutes to under 1 second. The 680 ms trace illustrates that improvement.
+            Two measured values, not a modelled curve. Source: Freshservice Orchestration, 2020–2026.
           </figcaption>
 
           <table class="visually-hidden">
@@ -257,7 +248,7 @@
 
     <footer class="colophon">
       <p class="meta">© <span id="year">2026</span> Sumit Sawant</p>
-      <p class="meta"><a href="versions/">Explore all portfolio versions ↗</a></p>
+      <p class="meta">Backend · Orchestration · Network APIs</p>
       <p class="meta"><a href="#top">Back to top ↑</a></p>
     </footer>
   </body>

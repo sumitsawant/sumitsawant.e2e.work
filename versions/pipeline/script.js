@@ -209,9 +209,6 @@ function buildPipeline(THREE, canvas) {
   root.add(dust);
 
   let time = reducedMotion ? 3 : 0;
-  let manualOptimise = false;
-  let paused = reducedMotion;
-  let inView = true;
   let optimise = 0;
   let optimiseTarget = 0;
   let pageProgress = 0;
@@ -219,9 +216,9 @@ function buildPipeline(THREE, canvas) {
   let pointerY = 0;
 
   addEventListener("systemscroll", (event) => {
-    optimiseTarget = manualOptimise ? 1 : event.detail.optimise;
+    optimiseTarget = event.detail.optimise;
     pageProgress = event.detail.page;
-    if (paused) { optimise = optimiseTarget; render(0); }
+    if (reducedMotion) { optimise = optimiseTarget; render(0); }
   });
   if (!coarsePointer && !reducedMotion) {
     addEventListener("pointermove", (event) => {
@@ -298,14 +295,14 @@ function buildPipeline(THREE, canvas) {
   let running = false;
   let last = performance.now();
   function loop(now) {
-    if (document.hidden || paused) { running = false; return; }
+    if (document.hidden || reducedMotion) { running = false; return; }
     raf = requestAnimationFrame(loop);
     const delta = Math.min(.05, Math.max(0, (now - last) / 1000));
     last = now;
     render(delta);
   }
   function start() {
-    if (running || paused || document.hidden || !inView) return;
+    if (running || reducedMotion || document.hidden) return;
     running = true;
     last = performance.now();
     raf = requestAnimationFrame(loop);
@@ -316,29 +313,6 @@ function buildPipeline(THREE, canvas) {
     running = false;
   }
 
-  const modeButton = document.querySelector("#scene-mode");
-  const pauseButton = document.querySelector("#scene-pause");
-  modeButton?.addEventListener("click", () => {
-    manualOptimise = !manualOptimise;
-    modeButton.setAttribute("aria-pressed", String(manualOptimise));
-    modeButton.textContent = manualOptimise ? "Follow scroll" : "Optimise pipeline";
-    optimiseTarget = manualOptimise ? 1 : Number(getComputedStyle(document.documentElement).getPropertyValue("--optimise")) || 0;
-    if (paused) { optimise = optimiseTarget; render(0); }
-  });
-  if (pauseButton) {
-    pauseButton.setAttribute("aria-pressed", String(paused));
-    pauseButton.textContent = paused ? "Resume motion" : "Pause motion";
-    pauseButton.addEventListener("click", () => {
-      paused = !paused;
-      pauseButton.setAttribute("aria-pressed", String(paused));
-      pauseButton.textContent = paused ? "Resume motion" : "Pause motion";
-      paused ? stop() : start();
-    });
-  }
-  new IntersectionObserver(([entry]) => {
-    inView = entry.isIntersecting;
-    inView ? start() : stop();
-  }).observe(document.querySelector(".lede"));
   document.addEventListener("visibilitychange", () => document.hidden ? stop() : start());
   let resizeFrame = 0;
   addEventListener("resize", () => {
@@ -349,7 +323,6 @@ function buildPipeline(THREE, canvas) {
     event.preventDefault();
     stop();
     document.documentElement.classList.add("no-scene");
-    document.querySelectorAll(".scene-controls button").forEach(button => { button.disabled = true; });
   });
   start();
 }
@@ -362,7 +335,6 @@ async function boot() {
     buildPipeline(THREE, canvas);
   } catch (error) {
     document.documentElement.classList.add("no-scene");
-    document.querySelectorAll(".scene-controls button").forEach(button => { button.disabled = true; });
     console.warn("Interactive pipeline unavailable; using the editorial fallback.", error);
   }
 }
