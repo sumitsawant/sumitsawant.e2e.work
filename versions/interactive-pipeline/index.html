@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="../../" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sumit Sawant — backend engineer. Telecom platforms, workflow orchestration, and the production systems behind them. 1.25B+ transactions, 3 min to under 1 second." />
+    <meta name="author" content="Sumit Sawant" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f2ed" />
+    <link rel="canonical" href="https://sumitsawant.e2e.work/" />
+    <meta property="og:title" content="Sumit Sawant — Backend Engineer" />
+    <meta property="og:description" content="Telecom platforms, workflow orchestration, and the production systems behind them." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sumitsawant.e2e.work/" />
+    <meta property="og:image" content="https://sumitsawant.e2e.work/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sumit Sawant — Backend Engineer. Backend systems, built to stay fast." />
+    <meta property="og:site_name" content="Sumit Sawant" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://sumitsawant.e2e.work/og.png" />
+    <meta name="twitter:image:alt" content="Sumit Sawant — Backend Engineer. Backend systems, built to stay fast." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
+    <title>Sumit Sawant — Backend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="versions/interactive-pipeline/styles.css" />
+    <script type="module" src="versions/interactive-pipeline/script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sumit Sawant",
+        "url": "https://sumitsawant.e2e.work/",
+        "image": "https://sumitsawant.e2e.work/og.png",
+        "jobTitle": "Backend Engineer",
+        "email": "mailto:mr.sumitsawant@gmail.com",
+        "worksFor": { "@type": "Organization", "name": "LotusFlare" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" },
+        "knowsAbout": ["Backend systems", "Network APIs", "Orchestration", "Java", "Vert.x", "Golang", "Kubernetes"],
+        "sameAs": ["https://www.linkedin.com/in/sumitsawant/", "https://github.com/sumitsawant"]
+      }
+    </script>
+  </head>
+  <body id="top">
+    <canvas id="world" aria-hidden="true"></canvas>
+    <div class="signal-noise" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <a class="masthead__name" href="#top">Sumit Sawant</a>
+      <nav class="masthead__nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#record">Record</a>
+        <a href="#contact">Contact</a>
+        <a href="versions/">Versions</a>
+        <a href="SumitSawant-2026.pdf" target="_blank" rel="noreferrer">CV<span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ── Lede ──────────────────────────────────────────── -->
+      <section class="lede">
+        <div class="lede__text">
+          <p class="meta lede__meta">
+            <span>Backend Engineer</span>
+            <span>LotusFlare</span>
+            <span>Pune, IN</span>
+          </p>
+          <h1 class="lede__title">Backend systems,<br />built to stay <span>fast.</span></h1>
+          <div class="lede__body">
+            <p>Eight years across telecom platforms, workflow orchestration, and the production systems behind them — from implementation through the on-call pager and the customer call when it breaks.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="hero-button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="hero-link" href="versions/">All portfolio versions <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="system-hud" aria-hidden="true">
+          <div class="system-hud__head meta">
+            <span><i></i> System live</span>
+            <span>01 / Request trace</span>
+          </div>
+          <div class="system-hud__metrics">
+            <p><span>State</span><strong data-system-state>Processing</strong></p>
+            <p><span>Trace stage</span><strong data-trace-stage>Request</strong></p>
+            <p><span>Median latency</span><strong data-latency>180.0 s</strong></p>
+            <p><span>Throughput</span><strong>1.25B+</strong></p>
+          </div>
+        </div>
+        <div class="scene-controls" aria-label="Pipeline visualization controls">
+          <button type="button" id="scene-mode" aria-pressed="false">Optimise pipeline</button>
+          <button type="button" id="scene-pause" aria-pressed="false">Pause motion</button>
+          <span class="meta">Illustrative request trace</span>
+        </div>
+        <p class="scroll-cue meta" aria-hidden="true"><span></span> Scroll to optimise</p>
+      </section>
+
+      <!-- ── The proof ─────────────────────────────────────── -->
+      <section class="figure-block" aria-labelledby="fig-title">
+        <div class="figure-head">
+          <p class="meta">Figure 01 — Freshservice Orchestration, Freshworks</p>
+          <h2 id="fig-title" class="figure-title">Median orchestration latency, before and after</h2>
+        </div>
+
+        <figure class="chart trace-proof" role="img" aria-labelledby="chart-t chart-d">
+          <h3 id="chart-t" class="visually-hidden">Median orchestration latency before and after</h3>
+          <p id="chart-d" class="visually-hidden">Latency fell from about 180 seconds to under 1 second, a reduction of more than 99 percent.</p>
+          <div class="trace-proof__values" aria-hidden="true">
+            <div>
+              <p class="meta">Before / queue blocked</p>
+              <p class="trace-proof__number">03:00<span>.000</span></p>
+            </div>
+            <p class="trace-proof__arrow">→</p>
+            <div>
+              <p class="meta">After / ACK 200</p>
+              <p class="trace-proof__number trace-proof__number--after">00:00<span>.680</span></p>
+            </div>
+          </div>
+          <div class="trace-proof__lanes" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="trace-proof__footer meta" aria-hidden="true">
+            <span>Trace FSO-2026-0125</span>
+            <span>180,000 ms</span>
+            <strong>−99.6%</strong>
+            <span>680 ms</span>
+          </div>
+
+          <figcaption class="meta chart__cap">
+            Reported result: about 3 minutes to under 1 second. The 680 ms trace illustrates that improvement.
+          </figcaption>
+
+          <table class="visually-hidden">
+            <caption>Median orchestration latency</caption>
+            <thead><tr><th scope="col">Stage</th><th scope="col">Median latency</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Before</th><td>180 seconds (3 minutes)</td></tr>
+              <tr><th scope="row">After</th><td>Under 1 second</td></tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <dl class="figures">
+          <div><dt>Transactions processed</dt><dd>1.25B<span aria-hidden="true">+</span></dd></div>
+          <div><dt>Customer accounts</dt><dd>6,058</dd></div>
+          <div><dt>App orchestrations</dt><dd>50</dd></div>
+          <div><dt>Integrated apps</dt><dd>45<span aria-hidden="true">+</span></dd></div>
+          <div><dt>Latency reduction</dt><dd>99.6<span aria-hidden="true">%</span></dd></div>
+        </dl>
+      </section>
+
+      <!-- ── Selected work ─────────────────────────────────── -->
+      <section class="entries" id="work" aria-labelledby="work-h">
+        <div class="rule-head">
+          <h2 id="work-h">Selected work</h2>
+          <p class="meta">Three of eight years</p>
+        </div>
+
+        <article class="entry">
+          <p class="entry__no meta">01</p>
+          <div class="entry__main">
+            <h3>Network API Marketplace</h3>
+            <p class="entry__org meta">LotusFlare · 2026 — present</p>
+            <p class="entry__lede">Backend systems that let communications service providers expose, manage, and monetise network APIs — publishing, metering and billing, and developer onboarding.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>Scope</dt><dd>API publishing, metering &amp; billing</dd></div>
+            <div><dt>Domain</dt><dd>Telecom / CSP</dd></div>
+          </dl>
+        </article>
+
+        <article class="entry">
+          <p class="entry__no meta">02</p>
+          <div class="entry__main">
+            <h3>Freshservice Orchestration</h3>
+            <p class="entry__org meta">Freshworks · 2020 — 2026</p>
+            <p class="entry__lede">Scaled the orchestration platform behind Freshservice — the layer that runs workflow automations across third-party applications — and took its median run from three minutes to under a second.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>Throughput</dt><dd>1.25B<span aria-hidden="true">+</span> transactions</dd></div>
+            <div><dt>Latency</dt><dd><span class="hi">3 min → &lt; 1 s</span></dd></div>
+            <div><dt>Accounts</dt><dd>6,058</dd></div>
+            <div><dt>Stack</dt><dd>Java, Vert.x</dd></div>
+          </dl>
+        </article>
+
+        <article class="entry">
+          <p class="entry__no meta">03</p>
+          <div class="entry__main">
+            <h3>Production ownership</h3>
+            <p class="entry__org meta">Freshworks · 2020 — 2026</p>
+            <p class="entry__lede">Owned reliability for a platform at billion-transaction scale: security hardening, escalation and SLA paths, and mentoring engineers on production readiness. Informed by 1,000+ L2 escalations and 500+ customer calls.</p>
+          </div>
+          <dl class="spec">
+            <div><dt>Practice</dt><dd>Security hardening, SLA</dd></div>
+            <div><dt>Also</dt><dd>Mentorship</dd></div>
+          </dl>
+        </article>
+      </section>
+
+      <!-- ── Statement ─────────────────────────────────────── -->
+      <section class="statement">
+        <blockquote>
+          <p>Most of the latency and reliability wins came from being on the call when it broke — then fixing the system rather than the ticket.</p>
+        </blockquote>
+      </section>
+
+      <!-- ── Record ────────────────────────────────────────── -->
+      <section class="record" id="record" aria-labelledby="rec-h">
+        <div class="rule-head">
+          <h2 id="rec-h">Record</h2>
+          <p class="meta">2018 — present</p>
+        </div>
+        <ol class="roles">
+          <li>
+            <p class="roles__when meta">2026 — present</p>
+            <div><p class="roles__org">LotusFlare</p><p class="roles__note meta">Network API Marketplace</p></div><p class="roles__title">Backend Engineer</p>
+          </li>
+          <li>
+            <p class="roles__when meta">2020 — 2026</p>
+            <div><p class="roles__org">Freshworks</p><p class="roles__note meta">Freshservice Orchestration</p></div><p class="roles__title">Senior Software Engineer</p>
+          </li>
+          <li>
+            <p class="roles__when meta">2018 — 2020</p>
+            <div><p class="roles__org">Infiverve</p><p class="roles__note meta">Flint automation platform</p></div><p class="roles__title">Software Product Developer</p>
+          </li>
+        </ol>
+
+        <div class="stack">
+          <div><p class="meta">Services</p><p>Java, Vert.x, Golang</p></div>
+          <div><p class="meta">Data &amp; messaging</p><p>Redis, RabbitMQ, Elasticsearch</p></div>
+          <div><p class="meta">Platform</p><p>Kubernetes, AWS, Azure</p></div>
+        </div>
+      </section>
+
+      <!-- ── Contact ───────────────────────────────────────── -->
+      <section class="contact" id="contact" aria-labelledby="c-h">
+        <div>
+          <p class="contact__ack meta"><i></i> Trace complete · ACK / 200</p>
+          <h2 id="c-h" class="contact__h">Building something<br />at platform scale?</h2>
+        </div>
+        <div class="contact__links">
+          <a class="contact__mail" href="mailto:mr.sumitsawant@gmail.com">mr.sumitsawant@gmail.com</a>
+          <p class="meta contact__rest">
+            <a href="https://www.linkedin.com/in/sumitsawant/" target="_blank" rel="noreferrer">LinkedIn<span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/sumitsawant" target="_blank" rel="noreferrer">GitHub<span aria-hidden="true">↗</span></a>
+            <a href="SumitSawant-2026.pdf" target="_blank" rel="noreferrer">CV<span aria-hidden="true">↗</span></a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <p class="meta">© <span id="year">2026</span> Sumit Sawant</p>
+      <p class="meta"><a href="versions/">Explore all portfolio versions ↗</a></p>
+      <p class="meta"><a href="#top">Back to top ↑</a></p>
+    </footer>
+  </body>
+</html>

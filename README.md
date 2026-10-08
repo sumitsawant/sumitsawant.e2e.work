@@ -1,44 +1,9 @@
 # sumitsawant.e2e.work
 
-Personal portfolio for Sumit Sawant, deployed as a static site with GitHub Pages.
+Personal portfolio for Sumit Sawant, hosted on GitHub Pages.
 
-## Local preview
+The live homepage uses the Signal design. The same design remains available at `/signal/`.
 
-From the repository root:
+All seven portfolio experiences are linked at `/versions/`. The rejected WebGL pipeline experiment is preserved at `/versions/interactive-pipeline/`, and the earlier pipeline is at `/versions/pipeline/`.
 
-```bash
-python3 -m http.server 4173
-```
-
-Open `http://localhost:4173`.
-
-## Structure
-
-- `index.html` — current Three.js portfolio and metadata
-- `versions/` — gallery of all six portfolio experiences, including the preserved pipeline homepage
-- WebGL controls support manual optimisation, pausing, and reduced motion. The illustrative trace is labelled separately from reported results.
-- `styles.css` — current responsive visual and motion system
-- `script.js` — Three.js scene, scroll reveals, and interactions
-- `SumitSawant-2026.pdf` — downloadable current résumé
-- `resume-2026.html` — editable source for the current résumé
-- `signal/` — self-contained archive of the interactive system visualization design (Aug 2026)
-- `previous/` — self-contained archive of the portfolio published before that, including its signal view
-- `SumitSawant.pdf` — retained legacy résumé URL for compatibility
-- `og.svg` — current social preview artwork
-- `CNAME` — custom-domain configuration; do not delete
-
-## Publishing
-
-GitHub Pages deploys the root of `main` through the built-in `pages-build-deployment` workflow. A push to `main` publishes automatically.
-
-Before publishing:
-
-1. Preview at desktop, tablet, and mobile widths.
-2. Confirm all external links and `mailto:` links.
-3. Confirm `SumitSawant-2026.pdf` is the current one-page résumé.
-4. Keep `CNAME` exactly `sumitsawant.e2e.work`.
-5. Confirm the current site resolves at `/` and the archives at `/signal/` and `/previous/`.
-
-## Rollback
-
-Use `git revert <commit>` and push the revert to `main`; GitHub Pages will redeploy the prior state.
+Preview with `python3 -m http.server 4173`. Pushes to `main` publish through GitHub Pages. Preserve `CNAME` as `sumitsawant.e2e.work`.
